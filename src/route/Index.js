@@ -132,7 +132,7 @@ const Router = () => {
   return (
       <Routes>
         <Route path={`${process.env.PUBLIC_URL}`} element={<Layout />}>
-          <Route index element={<Homepage />}></Route>
+          {/* <Route index element={<Homepage />}></Route> */}
           <Route path="crypto" element={<Crypto />}></Route>
           <Route path="analytics" element={<Analytics />}></Route>
           <Route path="invest" element={<Invest />}></Route>
@@ -143,7 +143,7 @@ const Router = () => {
 
           
           <Route element={<UserContextProvider />} >
-            <Route path="user-list-regular" element={<UserListRegular />}></Route>
+            <Route index element={<UserListRegular />}></Route>
             <Route path="user-list-compact" element={<UserListCompact />}></Route>
             <Route path="user-contact-card" element={<UserContactCard />}></Route>
             <Route path="user-details-regular/:userId" element={<UserDetails />}></Route>

@@ -1,5 +1,5 @@
 import React from "react";
-import LogoLight2x from "../../images/logo-horizontal-sem-fundo2x.png";
+import LogoLight2x from "../../images/logo-horizontal-sem-fundo-dark2x.png";
 import LogoDark2x from "../../images/logo-horizontal-sem-fundo2x.png";
 import {Link} from "react-router-dom";
 
